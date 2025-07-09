@@ -6,10 +6,12 @@ interface Props {
 }
 const Menu = ({ text, children }: Props) => {
   return (
-    <>
-      <h1>{text}</h1>
-      {children}
-    </>
+    <div className="card text-bg-primary mb-3">
+      <div className="card-body">
+        <h5 className="card-title">{text}</h5>
+        <p className="card-text">{children}</p>
+      </div>
+    </div>
   );
 };
 
